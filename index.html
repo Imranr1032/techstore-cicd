@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore — Premium Tech, Delivered</title>
+  <meta name="description" content="Shop the latest gadgets, laptops, and accessories at TechStore." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">T</span> Tech<span class="accent">Store</span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">🔍</button>
+        <a href="cart.html" class="icon-btn cart-btn" aria-label="Cart">
+          🛒 <span class="cart-count" id="cartCount">0</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">🔥 New Arrivals 2026</span>
+        <h1>Premium Tech.<br/><span class="gradient-text">Delivered Fast.</span></h1>
+        <p>Discover the latest laptops, smartphones, and gadgets from the world's top brands. Free shipping over $99.</p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn btn-primary">Shop Now →</a>
+          <a href="about.html" class="btn btn-ghost">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>50K+</strong><span>Happy Customers</span></div>
+          <div><strong>1,200+</strong><span>Products</span></div>
+          <div><strong>4.9★</strong><span>Avg Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card card-1">
+          <div class="fc-img">💻</div>
+          <div><strong>MacBook Pro M3</strong><span>$1,999</span></div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="fc-img">🎧</div>
+          <div><strong>AirPods Max</strong><span>$549</span></div>
+        </div>
+        <div class="floating-card card-3">
+          <div class="fc-img">⌚</div>
+          <div><strong>Apple Watch</strong><span>$399</span></div>
+        </div>
+        <div class="hero-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Shop by Category</h2>
+        <p>Browse our curated collections</p>
+      </div>
+      <div class="categories">
+        <a href="shop.html?cat=laptops" class="cat-card">
+          <div class="cat-icon">💻</div>
+          <h3>Laptops</h3>
+          <span>240+ products</span>
+        </a>
+        <a href="shop.html?cat=phones" class="cat-card">
+          <div class="cat-icon">📱</div>
+          <h3>Smartphones</h3>
+          <span>180+ products</span>
+        </a>
+        <a href="shop.html?cat=audio" class="cat-card">
+          <div class="cat-icon">🎧</div>
+          <h3>Audio</h3>
+          <span>320+ products</span>
+        </a>
+        <a href="shop.html?cat=wearables" class="cat-card">
+          <div class="cat-icon">⌚</div>
+          <h3>Wearables</h3>
+          <span>95+ products</span>
+        </a>
+        <a href="shop.html?cat=gaming" class="cat-card">
+          <div class="cat-icon">🎮</div>
+          <h3>Gaming</h3>
+          <span>410+ products</span>
+        </a>
+        <a href="shop.html?cat=accessories" class="cat-card">
+          <div class="cat-icon">🔌</div>
+          <h3>Accessories</h3>
+          <span>500+ products</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head row">
+        <div>
+          <h2>Featured Products</h2>
+          <p>Hand-picked by our team</p>
+        </div>
+        <a href="shop.html" class="btn btn-ghost">View All →</a>
+      </div>
+      <div class="product-grid" id="featuredGrid"></div>
+    </div>
+  </section>
+
+  <!-- Trust badges -->
+  <section class="section">
+    <div class="container trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">🚚</div>
+        <h4>Free Shipping</h4>
+        <p>On all orders over $99</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">🔒</div>
+        <h4>Secure Payment</h4>
+        <p>256-bit SSL encryption</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">↩️</div>
+        <h4>30-Day Returns</h4>
+        <p>Money-back guarantee</p>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">💬</div>
+        <h4>24/7 Support</h4>
+        <p>Always here to help</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container newsletter-inner">
+      <div>
+        <h2>Get 10% Off Your First Order</h2>
+        <p>Subscribe to our newsletter for exclusive deals and product launches.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <span class="logo-mark">T</span> Tech<span class="accent">Store</span>
+        </a>
+        <p class="footer-about">Your trusted source for premium tech products since 2020.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html?cat=laptops">Laptops</a>
+        <a href="shop.html?cat=phones">Phones</a>
+        <a href="shop.html?cat=audio">Audio</a>
+        <a href="shop.html?cat=gaming">Gaming</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">Press</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="#">Help Center</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Warranty</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 TechStore. All rights reserved.</p>
+      <p>Made with ❤️ for tech lovers</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
