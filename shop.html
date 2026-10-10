@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — TechStore</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">T</span> Tech<span class="accent">Store</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="icon-btn cart-btn">🛒 <span class="cart-count" id="cartCount">0</span></a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </header>
 
+  <section class="page-head">
+    <div class="container">
+      <h1>All Products</h1>
+      <p><a href="index.html">Home</a> / Shop</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container shop-layout">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <div class="filter-group">
+          <h4>Category</h4>
+          <label><input type="checkbox" value="laptops" /> Laptops</label>
+          <label><input type="checkbox" value="phones" /> Smartphones</label>
+          <label><input type="checkbox" value="audio" /> Audio</label>
+          <label><input type="checkbox" value="wearables" /> Wearables</label>
+          <label><input type="checkbox" value="gaming" /> Gaming</label>
+          <label><input type="checkbox" value="accessories" /> Accessories</label>
+        </div>
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <input type="range" id="priceRange" min="0" max="3000" value="3000" step="50" />
+          <div class="price-labels"><span>$0</span><span id="priceMax">$3000</span></div>
+        </div>
+        <div class="filter-group">
+          <h4>Rating</h4>
+          <label><input type="radio" name="rating" value="0" checked /> All</label>
+          <label><input type="radio" name="rating" value="4" /> 4★ & up</label>
+          <label><input type="radio" name="rating" value="4.5" /> 4.5★ & up</label>
+        </div>
+      </aside>
+
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <input type="search" id="searchInput" placeholder="Search products..." class="search-input" />
+          <select id="sortSelect" class="sort-select">
+            <option value="featured">Featured</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Rated</option>
+            <option value="name">Name A-Z</option>
+          </select>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="empty-state" id="emptyState" style="display:none;">
+          <div style="font-size:3rem;">🔍</div>
+          <h3>No products found</h3>
+          <p>Try adjusting your filters or search.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/shop.js"></script>
+</body>
+</html>
