@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — TechStore</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo"><span class="logo-mark">T</span> Tech<span class="accent">Store</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="cart.html" class="icon-btn cart-btn">🛒 <span class="cart-count" id="cartCount">0</span></a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+    </div>
+  </header>
 
+  <section class="page-head">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p><a href="index.html">Home</a> / Contact</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Let's talk</h2>
+        <p>Have a question, feedback, or just want to say hi? We'd love to hear from you.</p>
+        <div class="info-item"><span>📍</span><div><strong>Address</strong><p>123 Tech Avenue, San Francisco, CA 94107</p></div></div>
+        <div class="info-item"><span>📧</span><div><strong>Email</strong><p>hello@techstore.dev</p></div></div>
+        <div class="info-item"><span>📞</span><div><strong>Phone</strong><p>+1 (555) 123-4567</p></div></div>
+        <div class="info-item"><span>⏰</span><div><strong>Hours</strong><p>Mon–Fri, 9am – 6pm PST</p></div></div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send a message</h3>
+        <input type="text" placeholder="Your name" required />
+        <input type="email" placeholder="Your email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your message..." rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary full">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>© 2026 TechStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
